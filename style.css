@@ -1,0 +1,35 @@
+@font-face {
+  font-family: GothamBold;
+  src: url(/assets/fonts/Gotham\ Bold.otf);
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(/assets/fonts/Gotham\ Book.otf);
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url(/assets/fonts/Gotham\ Medium.otf);
+}
+@font-face {
+  font-family: GothamThin;
+  src: url(/assets/fonts/Gotham\ Thin.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background-1 {
+  background: url('/assets/images/first-page-background.png') no-repeat center center/cover;
+  height: 100vh;
+}
+.background-2 {
+  background: url('/assets/images/second-page-background.png') no-repeat center center/cover;
+  height: 100vh;
+}
+.background-3 {
+  background: url('/assets/images/third-page-background.png') no-repeat center center/cover;
+  height: 100vh;
+}
