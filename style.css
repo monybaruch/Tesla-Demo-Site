@@ -63,6 +63,7 @@ a {
 .background-1 > .content {
   display: flex;
   justify-content: center;
+  height: 70%;
 }
 .content-flex-items {
   display: flex;
@@ -88,26 +89,20 @@ h3 {
   font-size: 16px;
 }
 
-/* .background-1 > .end-content {
+.background-1 > .end-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  flex-shrink: 1;
   text-align: center;
   justify-content: flex-end;
-  flex-basis: auto;
   color: #fff;
+  align-items: center;
 }
-
-.end-content > .end-flex-items {
+.end-content-p {
   display: flex;
 }
-
-.end-flex-items > svg {
-  height: 30px;
-  width: 20px;
-} */
+.end-content-links {
+  display: flex;
+}
 
 .background-2 {
   background: url('/assets/images/second-page-background.png') no-repeat center center/cover;
