@@ -19,12 +19,96 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: GothamBold;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+  font-weight: GothamBold;
+  font-size: 14px;
+  height: 56px;
+  padding: 20px 40px;
+}
+
+.nav-flex-items > a > svg {
+  height: inherit;
+  width: 152px;
+  padding: 0 16px;
+}
+
+.nav-flex-items > .middle-ul {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.nav-flex-items > .right-ul {
+  display: flex;
+  align-items: center;
+}
+a {
+  color: #fff;
+  padding: 0 12px;
 }
 
 .background-1 {
   background: url('/assets/images/first-page-background.png') no-repeat center center/cover;
   height: 100vh;
 }
+
+.background-1 > .content {
+  display: flex;
+  justify-content: center;
+}
+.content-flex-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.content-flex-items > h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 24px;
+  line-height: 48px;
+  margin-top: 35%;
+}
+.content-flex-items > p {
+  padding: 6px 24px 14px;
+  font-size: 14px;
+}
+h3 {
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* .background-1 > .end-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+  color: #fff;
+}
+
+.end-content > .end-flex-items {
+  display: flex;
+}
+
+.end-flex-items > svg {
+  height: 30px;
+  width: 20px;
+} */
+
 .background-2 {
   background: url('/assets/images/second-page-background.png') no-repeat center center/cover;
   height: 100vh;
