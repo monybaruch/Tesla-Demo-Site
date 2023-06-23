@@ -22,6 +22,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: GothamBold;
+  color: #fff;
 }
 
 .nav-container {
@@ -39,7 +40,6 @@
   height: inherit;
   width: 152px;
   padding: 0 16px;
-  color: #fff;
 }
 .demo-link {
   border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
@@ -80,10 +80,10 @@
 .background-page-one {
   background: url('/assets/images/first-page-background.png') no-repeat center center/cover;
   height: 100vh;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
-.background-1 > .content {
+.background-page-one > .content {
   display: flex;
   justify-content: center;
   height: 70%;
@@ -96,7 +96,6 @@
 }
 .content-flex-items > h1 {
   font-size: 40px;
-  color: #fff;
   font-weight: 400;
   padding: 0 24px;
   line-height: 48px;
@@ -107,7 +106,6 @@
   font-size: 14px;
 }
 h3 {
-  color: black;
   padding: 10px;
   font-size: 16px;
 }
@@ -117,7 +115,6 @@ h3 {
   flex-direction: column;
   text-align: center;
   justify-content: flex-end;
-  color: #fff;
   align-items: center;
   font-size: 14px;
   gap: 15px;
@@ -137,7 +134,6 @@ h3 {
 }
 .car-specs > div > h3 {
   font-size: 24px;
-  color: #fff;
   min-height: 24px;
   font-weight: 500;
 }
@@ -158,12 +154,8 @@ h3 {
 }
 .svg-container > h3 {
   font-size: 24px;
-  color: #fff;
   min-height: 24px;
   font-weight: 500;
-}
-.svg-container > svg > g {
-  color: #fff;
 }
 
 .order-links {
@@ -192,10 +184,12 @@ h3 {
 .inventory-link {
   border: transparent 2.6666px solid;
   background: #fff;
-  color: black;
 }
 .inventory-link:hover {
   opacity: 0.7;
+}
+span.explore {
+  color: black;
 }
 .order-links > div > a > span {
   width: 235px;
@@ -207,17 +201,19 @@ h3 {
 .end-content > .tax-credit {
   margin-top: 32px;
   padding: 0 24px;
+  text-align: center;
 }
 .end-content > .tax-credit > p,
 a.review {
   font-size: 12px;
   font-weight: 300;
-  color: rgba(238, 238, 238);
+  color: rgba(238, 238, 238, 0.702);
 }
 
 .end-content > .tax-credit > p > a.review {
-  border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
+  border-bottom: 1px rgba(238, 238, 238, 0.705) solid;
   transition: all 0.3s ease-out;
+  color: rgba(238, 238, 238, 0.702);
 }
 .end-content > .tax-credit > p > a.review:hover {
   border-color: rgba(238, 238, 238);
