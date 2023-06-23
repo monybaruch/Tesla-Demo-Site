@@ -39,16 +39,17 @@
   height: inherit;
   width: 152px;
   padding: 0 16px;
+  color: #fff;
 }
 .demo-link {
   border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
-  transition: all 1s;
+  transition: all 0.3s ease-out;
   color: rgba(238, 238, 238, 0.702);
 }
 
 .demo-link:hover {
   border-color: rgba(238, 238, 238);
-  border-width: 3px;
+  border-width: 2px;
   color: rgba(238, 238, 238);
 }
 
@@ -64,20 +65,22 @@
 .right-ul > li > a,
 .middle-ul > li > a {
   color: #fff;
-  padding: 10px 20px;
+  padding: 7px 14px;
+  border-radius: 5px;
   background: transparent;
-  transition: all 2s ease-in-out;
+  transition: all 0.2s linear;
 }
 .middle-ul > li > a:hover {
-  background: rgba(0, 0, 0, 0.309);
+  background: rgba(0, 0, 0, 0.1);
 }
 .right-ul > li > a:hover {
-  background: rgba(0, 0, 0, 0.709);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.background-1 {
+.background-page-one {
   background: url('/assets/images/first-page-background.png') no-repeat center center/cover;
   height: 100vh;
+  padding-bottom: 5px;
 }
 
 .background-1 > .content {
@@ -143,6 +146,26 @@ h3 {
   font-size: 12px;
 }
 
+.svg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.svg-container > p {
+  padding-top: 5px;
+  font-size: 12px;
+}
+.svg-container > h3 {
+  font-size: 24px;
+  color: #fff;
+  min-height: 24px;
+  font-weight: 500;
+}
+.svg-container > svg > g {
+  color: #fff;
+}
+
 .order-links {
   justify-content: center;
   align-items: center;
@@ -189,27 +212,24 @@ h3 {
 a.review {
   font-size: 12px;
   font-weight: 300;
-  color: rgba(238, 238, 238, 0.702);
+  color: rgba(238, 238, 238);
 }
 
 .end-content > .tax-credit > p > a.review {
   border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
-  transition: all 1s;
+  transition: all 0.3s ease-out;
 }
 .end-content > .tax-credit > p > a.review:hover {
   border-color: rgba(238, 238, 238);
-  border-width: 3px;
-  color: rgba(238, 238, 238);
-}
-.end-content > .tax-credit > p:hover {
+  border-width: 2px;
   color: rgba(238, 238, 238);
 }
 
-.background-2 {
+.background-page-two {
   background: url('/assets/images/second-page-background.png') no-repeat center center/cover;
   height: 100vh;
 }
-.background-3 {
+.background-page-three {
   background: url('/assets/images/third-page-background.png') no-repeat center center/cover;
   height: 100vh;
 }
