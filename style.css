@@ -63,7 +63,7 @@ a {
 .background-1 > .content {
   display: flex;
   justify-content: center;
-  height: 70%;
+  height: 72%;
 }
 .content-flex-items {
   display: flex;
@@ -96,12 +96,87 @@ h3 {
   justify-content: flex-end;
   color: #fff;
   align-items: center;
+  font-size: 14px;
+  gap: 15px;
 }
-.end-content-p {
+.car-specs {
   display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 24px;
+  outline-offset: 2px;
 }
-.end-content-links {
+.car-specs > div {
+  padding: 0 15px;
+}
+.car-specs > div > h3 {
+  font-size: 24px;
+  color: #fff;
+  min-height: 24px;
+  font-weight: 500;
+}
+.car-specs > div > p {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.order-links {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   display: flex;
+  min-width: 235px;
+  text-align: center;
+  gap: 24px;
+}
+.order-links > div > a {
+  margin-bottom: 3px;
+  border-radius: 4px;
+  padding: 10px 24px;
+}
+.custom-link {
+  border: white 2.6666px solid;
+  background: transparent;
+  color: black;
+  color: #fff;
+}
+.custom-link:hover {
+  opacity: 0.7;
+}
+.inventory-link {
+  border: transparent 2.6666px solid;
+  background: #fff;
+  color: black;
+}
+.inventory-link:hover {
+  opacity: 0.7;
+}
+.order-links > div > a > span {
+  width: 235px;
+  font-weight: 500px;
+  font-size: 14px;
+  padding: 0 40px;
+}
+
+.end-content > .tax-credit {
+  margin-top: 32px;
+  padding: 0 24px;
+}
+.end-content > .tax-credit > p,
+a.review {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(238, 238, 238, 0.702);
+}
+.end-content > .tax-credit > p:hover,
+a.review:hover {
+  color: rgba(238, 238, 238);
+}
+.end-content > .tax-credit > p > a.review {
+  border-bottom: 1px white solid;
 }
 
 .background-2 {
