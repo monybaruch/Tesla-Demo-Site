@@ -40,6 +40,17 @@
   width: 152px;
   padding: 0 16px;
 }
+.demo-link {
+  border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
+  transition: all 1s;
+  color: rgba(238, 238, 238, 0.702);
+}
+
+.demo-link:hover {
+  border-color: rgba(238, 238, 238);
+  border-width: 3px;
+  color: rgba(238, 238, 238);
+}
 
 .nav-flex-items > .middle-ul {
   display: flex;
@@ -50,9 +61,18 @@
   display: flex;
   align-items: center;
 }
-a {
+.right-ul > li > a,
+.middle-ul > li > a {
   color: #fff;
-  padding: 0 12px;
+  padding: 10px 20px;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+.middle-ul > li > a:hover {
+  background: rgba(0, 0, 0, 0.309);
+}
+.right-ul > li > a:hover {
+  background: rgba(0, 0, 0, 0.709);
 }
 
 .background-1 {
@@ -63,7 +83,7 @@ a {
 .background-1 > .content {
   display: flex;
   justify-content: center;
-  height: 72%;
+  height: 70%;
 }
 .content-flex-items {
   display: flex;
@@ -171,12 +191,18 @@ a.review {
   font-weight: 300;
   color: rgba(238, 238, 238, 0.702);
 }
-.end-content > .tax-credit > p:hover,
-a.review:hover {
+
+.end-content > .tax-credit > p > a.review {
+  border-bottom: 1px rgba(238, 238, 238, 0.702) solid;
+  transition: all 1s;
+}
+.end-content > .tax-credit > p > a.review:hover {
+  border-color: rgba(238, 238, 238);
+  border-width: 3px;
   color: rgba(238, 238, 238);
 }
-.end-content > .tax-credit > p > a.review {
-  border-bottom: 1px white solid;
+.end-content > .tax-credit > p:hover {
+  color: rgba(238, 238, 238);
 }
 
 .background-2 {
