@@ -175,15 +175,23 @@ h3 {
 .custom-link {
   border: white 2.6666px solid;
   background: transparent;
-  color: black;
-  color: #fff;
+  transition: all 0.5s linear;
 }
+a.custom-link > span {
+  color: #fff;
+  transition: all 0.5s linear;
+}
+
 .custom-link:hover {
-  opacity: 0.7;
+  background-color: #fff;
+}
+a.custom-link:hover > span {
+  color: black;
 }
 .inventory-link {
   border: transparent 2.6666px solid;
   background: #fff;
+  transition: all 0.5s linear;
 }
 .inventory-link:hover {
   opacity: 0.7;
@@ -207,7 +215,7 @@ span.explore {
 a.review {
   font-size: 12px;
   font-weight: 300;
-  color: rgba(238, 238, 238, 0.702);
+  color: rgba(238, 238, 238);
 }
 
 .end-content > .tax-credit > p > a.review {
@@ -228,4 +236,50 @@ a.review {
 .background-page-three {
   background: url('/assets/images/third-page-background.png') no-repeat center center/cover;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-around;
+  font-weight: 400;
+  max-height: 640px;
+  padding-left: 64px;
+}
+
+.tcl-badges {
+  text-align: start;
+}
+
+.tcl-badges > h2 {
+  color: black;
+}
+
+.tcl-badges > p {
+  padding-top: 16px;
+  color: black;
+}
+
+.safety-container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: black;
+}
+
+.safety-header {
+  color: black;
+}
+
+.safety-header > h1 {
+  color: black;
+}
+
+.safety-header > p {
+  color: black;
+}
+
+.safety-rating > div > h3 {
+  color: black;
+}
+.safety-rating > div > p {
+  color: black;
 }
