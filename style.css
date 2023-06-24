@@ -341,7 +341,7 @@ a.review {
 
 .third-page-container .background-page-three {
   background: url('/assets/images/third-page-background.png') no-repeat center center/cover;
-  height: 82%;
+  height: 78%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -350,7 +350,7 @@ a.review {
   padding-left: 64px;
 }
 .third-page-container .third-page-content {
-  height: 18%;
+  height: 22%;
   width: 100%;
   display: flex;
   justify-items: center;
@@ -389,10 +389,34 @@ a.review {
   font-family: GothamThin;
   font-weight: bolder;
 }
+
+u {
+  text-decoration: underline;
+  color: #393c41;
+  font-family: GothamThin;
+  font-weight: bolder;
+}
 .trip-p {
   width: 65%;
 }
 
 .trip-header {
   width: 35%;
+}
+
+.trip-header > a {
+  border: 2px black solid;
+  padding: 10px 34px;
+  transition: all 0.2s linear;
+  color: #393c41;
+  font-family: GothamMedium;
+  font-weight: 400;
+}
+.trip-header > a:hover {
+  background: black;
+  color: #fff;
+}
+
+.trip-header > h2 {
+  margin-bottom: 10px;
 }
