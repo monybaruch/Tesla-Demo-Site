@@ -291,6 +291,7 @@ a.review {
 .safety-header > h2 {
   color: black;
   font-size: 32px;
+  font-weight: 500;
 }
 
 .safety-rating {
@@ -299,11 +300,13 @@ a.review {
 .safety-rating > div > h3 {
   color: black;
   padding: 0;
+  font-weight: 500;
 }
 .safety-rating > div > p,
 .safety-header > p {
   color: #393c41;
   font-size: 14px;
+  font-weight: 500;
 }
 
 /* third page */
@@ -340,12 +343,14 @@ a.review {
 .tcl-badges > h2 {
   color: black;
   font-size: 24px;
+  font-weight: 550;
 }
 
 .tcl-badges > p {
   padding-top: 16px;
   color: black;
   font-size: 12px;
+  font-weight: 550;
 }
 
 .third-page-content > div > p {
@@ -358,11 +363,13 @@ a.review {
 
 .trip-p p {
   color: #393c41;
+  font-weight: 300;
 }
 
 u {
   text-decoration: underline;
   color: #393c41;
+  font-weight: 300;
 }
 .trip-p {
   width: 65%;
