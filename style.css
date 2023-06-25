@@ -1,20 +1,3 @@
-@font-face {
-  font-family: GothamBold;
-  src: url(/assets/fonts/Gotham\ Bold.otf);
-}
-@font-face {
-  font-family: GothamBook;
-  src: url(/assets/fonts/Gotham\ Book.otf);
-}
-@font-face {
-  font-family: GothamMedium;
-  src: url(/assets/fonts/Gotham\ Medium.otf);
-}
-@font-face {
-  font-family: GothamThin;
-  src: url(/assets/fonts/Gotham\ Thin.otf);
-}
-
 @keyframes messageAnimation {
   0% {
     background-color: rgb(57, 60, 65);
@@ -43,7 +26,7 @@
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 600;
 }
 body {
   position: relative;
@@ -67,12 +50,11 @@ body {
   cursor: pointer;
 }
 
+/* first page */
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-weight: 400;
-  font-weight: GothamBold;
   font-size: 14px;
   height: 56px;
   padding: 20px 40px;
@@ -138,7 +120,6 @@ body {
 }
 .content-flex-items > h1 {
   font-size: 40px;
-  font-weight: 400;
   padding: 0 24px;
   line-height: 48px;
   margin-top: 35%;
@@ -177,7 +158,6 @@ h3 {
 .car-specs > div > h3 {
   font-size: 24px;
   min-height: 24px;
-  font-weight: 500;
 }
 .car-specs > div > p {
   padding-top: 5px;
@@ -198,7 +178,6 @@ h3 {
 .svg-container > h3 {
   font-size: 24px;
   min-height: 24px;
-  font-weight: 500;
 }
 
 .order-links {
@@ -244,7 +223,6 @@ span.explore {
 }
 .order-links > div > a > span {
   width: 235px;
-  font-weight: 500px;
   font-size: 14px;
   padding: 0 40px;
 }
@@ -257,7 +235,6 @@ span.explore {
 .end-content > .tax-credit > p,
 a.review {
   font-size: 12px;
-  font-weight: 300;
   color: rgba(238, 238, 238);
 }
 
@@ -283,6 +260,7 @@ a.review {
 .second-page-container .background-page-two {
   width: 100%;
   height: 70%;
+  position: relative;
 }
 .second-page-container .background-page-two img {
   height: 100%;
@@ -307,8 +285,6 @@ a.review {
   align-items: start;
   flex-direction: row;
   justify-content: center;
-  font-family: GothamBold;
-  font-weight: 500;
   gap: 15px;
 }
 .safety-header {
@@ -317,24 +293,22 @@ a.review {
 .safety-header > h2 {
   color: black;
   font-size: 32px;
-  font-family: GothamMede;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .safety-rating {
   text-align: start;
-  font-weight: 400;
 }
 .safety-rating > div > h3 {
   color: black;
   padding: 0;
+  font-weight: 500;
 }
 .safety-rating > div > p,
 .safety-header > p {
   color: #393c41;
   font-size: 14px;
-  font-family: GothamThin;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* third page */
@@ -353,7 +327,6 @@ a.review {
   justify-content: flex-start;
   justify-content: space-around;
   padding-left: 64px;
-  font-weight: 400;
 }
 .third-page-container .third-page-content {
   height: 22%;
@@ -371,17 +344,15 @@ a.review {
 
 .tcl-badges > h2 {
   color: black;
-  font-family: GothamMedium;
-  font-weight: 400;
   font-size: 24px;
+  font-weight: 550;
 }
 
 .tcl-badges > p {
   padding-top: 16px;
   color: black;
-  font-family: GothamMedium;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 550;
 }
 
 .third-page-content > div > p {
@@ -394,15 +365,13 @@ a.review {
 
 .trip-p p {
   color: #393c41;
-  font-family: GothamThin;
-  font-weight: bolder;
+  font-weight: 300;
 }
 
 u {
   text-decoration: underline;
   color: #393c41;
-  font-family: GothamThin;
-  font-weight: bolder;
+  font-weight: 300;
 }
 .trip-p {
   width: 65%;
@@ -417,8 +386,6 @@ u {
   padding: 8px 50px;
   transition: all 0.2s linear;
   color: #393c41;
-  font-family: GothamMedium;
-  font-weight: 400;
   border-radius: 4px;
 }
 .trip-header > a:hover {
@@ -428,8 +395,56 @@ u {
 
 .trip-header > h2 {
   margin-bottom: 30px;
-  font-weight: 500;
-  font-family: GothamMedium;
-  color: black;
   font-size: 28px;
+  color: black;
+}
+
+/* second page animation */
+
+.second-page-container .background-page-two .dots-container {
+  height: 20%;
+  position: absolute;
+}
+
+.second-page-container .background-page-two .dots-container > span {
+  color: black;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.protection {
+  top: 11%;
+  left: 45%;
+}
+
+.structure {
+  top: 23%;
+  left: 37%;
+}
+
+.risk {
+  top: 57%;
+  left: 52%;
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+.second-page-container .background-page-two .dots-container:after {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 5px;
+  width: 5px;
+  top: auto;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.second-page-container .background-page-two .dots-container:before {
+  content: '';
+  position: absolute;
+  border: 2px solid black;
+  height: 92%;
 }
